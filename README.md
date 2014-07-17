@@ -2,6 +2,6 @@
 2. Approve webcam use
 3. Be in awe.
 
-![pex-headtrackr GIF demo](http://imgur.com/abhceSx)
+![pex-headtrackr GIF demo](http://imgur.com/abhceSx.gif)
 
 
