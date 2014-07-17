@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <!-- Load Pex for the Web -->
+        <script src="./lib/pex.web.js"></script>
+        <!-- Load headtrackr Library -->
+        <script src="./lib/headtrackr.js"></script>
+        <!-- Load Pex Cube Script -->
+        <script src="pexCube.js"></script>
+
+        <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
+        <video id="inputVideo" autoplay loop></video>   
+        <script type="text/javascript">
+            /* 
+                The following code initiates the headtrackr with 
+                a video element which will be used for the mediastream, 
+                and a canvas element we will copy the videoframes to.
+            */
+            var videoInput = document.getElementById('inputVideo');
+            var canvasInput = document.getElementById('inputCanvas');
+            var htracker = new headtrackr.Tracker();
+            htracker.init(videoInput, canvasInput);
+            htracker.start();
+        </script>
+    </head>
+    <body bgcolor="black">
+    </body>
+</html>
